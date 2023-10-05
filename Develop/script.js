@@ -14,7 +14,6 @@ let pwdLength = () => {
   let userInputLength = Number(prompt("Enter password length 8 through 128 characters:"));
   // Error checking loop to return appropriate value
   while(true){ 
-    let pwdCheck = false;
     if(Number.isFinite(userInputLength) && (userInputLength >= 8) && (userInputLength <= 128)){
       return userInputLength
     }else{
